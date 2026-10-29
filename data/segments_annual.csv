@@ -1,0 +1,37 @@
+company,segment,year,net_revenue_musd,segment_profit_musd,profit_measure,source_id
+MGM,Las Vegas Strip Resorts,2023,8799.146,3190.486,Segment Adjusted EBITDAR,S2
+MGM,Las Vegas Strip Resorts,2024,8816.113,3106.543,Segment Adjusted EBITDAR,S2
+MGM,Las Vegas Strip Resorts,2025,8441.503,2857.873,Segment Adjusted EBITDAR,S2
+MGM,Regional Operations,2023,3670.309,1133.196,Segment Adjusted EBITDAR,S2
+MGM,Regional Operations,2024,3720.322,1143.556,Segment Adjusted EBITDAR,S2
+MGM,Regional Operations,2025,3772.333,1163.227,Segment Adjusted EBITDAR,S2
+MGM,MGM China,2023,3153.609,866.889,Segment Adjusted EBITDAR,S2
+MGM,MGM China,2024,4022.384,1087.126,Segment Adjusted EBITDAR,S2
+MGM,MGM China,2025,4461.743,1203.194,Segment Adjusted EBITDAR,S2
+MGM,MGM Digital (mainly LeoVegas; BetMGM JV not included),2023,432.146,-32.424,Segment Adjusted EBITDAR,S2
+MGM,MGM Digital (mainly LeoVegas; BetMGM JV not included),2024,552.012,-77.227,Segment Adjusted EBITDAR,S2
+MGM,MGM Digital (mainly LeoVegas; BetMGM JV not included),2025,654.190,-90.307,Segment Adjusted EBITDAR,S2
+MGM,Corporate and other,2023,109.039,,n/a,S2
+MGM,Corporate and other,2024,129.714,,n/a,S2
+MGM,Corporate and other,2025,207.914,,n/a,S2
+MGM,Consolidated,2023,16164.249,2335.527,Consolidated Adjusted EBITDA,S2
+MGM,Consolidated,2024,17240.545,2410.841,Consolidated Adjusted EBITDA,S2
+MGM,Consolidated,2025,17537.683,2425.623,Consolidated Adjusted EBITDA,S2
+Caesars,Las Vegas,2023,4470,2016,Adjusted EBITDA,S4
+Caesars,Las Vegas,2024,4274,1907,Adjusted EBITDA,S4
+Caesars,Las Vegas,2025,4049,1728,Adjusted EBITDA,S4
+Caesars,Regional,2023,5778,1962,Adjusted EBITDA,S4
+Caesars,Regional,2024,5539,1810,Adjusted EBITDA,S4
+Caesars,Regional,2025,5756,1789,Adjusted EBITDA,S4
+Caesars,Caesars Digital,2023,973,38,Adjusted EBITDA,S4
+Caesars,Caesars Digital,2024,1163,117,Adjusted EBITDA,S4
+Caesars,Caesars Digital,2025,1408,236,Adjusted EBITDA,S4
+Caesars,Managed and Branded,2023,307,76,Adjusted EBITDA,S4
+Caesars,Managed and Branded,2024,274,71,Adjusted EBITDA,S4
+Caesars,Managed and Branded,2025,279,67,Adjusted EBITDA,S4
+Caesars,Corporate and Other,2023,0,-154,Adjusted EBITDA,S4
+Caesars,Corporate and Other,2024,-5,-166,Adjusted EBITDA,S4
+Caesars,Corporate and Other,2025,-6,-196,Adjusted EBITDA,S4
+Caesars,Consolidated,2023,11528,3938,Adjusted EBITDA,S4
+Caesars,Consolidated,2024,11245,3739,Adjusted EBITDA,S4
+Caesars,Consolidated,2025,11486,3624,Adjusted EBITDA,S4

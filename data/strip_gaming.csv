@@ -1,0 +1,17 @@
+company_or_market,year,metric,value_musd,source_id,note
+MGM Las Vegas Strip Resorts,2024,Table games drop,6028,S2,
+MGM Las Vegas Strip Resorts,2025,Table games drop,6127,S2,
+MGM Las Vegas Strip Resorts,2024,Table games win %,24.4,S2,percent not $M
+MGM Las Vegas Strip Resorts,2025,Table games win %,25.2,S2,percent not $M
+MGM Las Vegas Strip Resorts,2024,Slot handle,23840,S2,
+MGM Las Vegas Strip Resorts,2025,Slot handle,24565,S2,
+Caesars Las Vegas,2024,Table games drop,3124,S4,
+Caesars Las Vegas,2025,Table games drop,2880,S4,
+Caesars Las Vegas,2024,Table games hold %,21.3,S4,percent not $M
+Caesars Las Vegas,2025,Table games hold %,19.9,S4,percent not $M
+Caesars Las Vegas,2024,Slot handle,10569,S4,
+Caesars Las Vegas,2025,Slot handle,10427,S4,
+Las Vegas Strip market (NGCB),2024,Gaming win,8812.484,S18,LVCVA year-end summary citing NGCB
+Las Vegas Strip market (NGCB),2025,Gaming win,8815.212,S23,NGCB Dec 2025 Monthly Revenue Report 12-month total (+0.03%)
+Las Vegas Strip market (NGCB),2025,Table/counter/card win,3865.039,S23,
+Las Vegas Strip market (NGCB),2025,Slot win,4950.173,S23,

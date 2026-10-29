@@ -1,0 +1,22 @@
+company,segment,quarter,net_revenue_musd,segment_profit_musd,profit_measure,source_id
+MGM,Las Vegas Strip Resorts,2024-Q1,2255.029,827.788,Segment Adjusted EBITDAR,S6
+MGM,Las Vegas Strip Resorts,2024-Q2,2205.462,782.289,Segment Adjusted EBITDAR,S7
+MGM,Las Vegas Strip Resorts,2024-Q3,2132.213,731.037,Segment Adjusted EBITDAR,S8
+MGM,Las Vegas Strip Resorts,2024-Q4,2223.409,765.429,Segment Adjusted EBITDAR,S1
+MGM,Las Vegas Strip Resorts,2025-Q1,2176.120,811.160,Segment Adjusted EBITDAR,S6
+MGM,Las Vegas Strip Resorts,2025-Q2,2114.692,710.496,Segment Adjusted EBITDAR,S7
+MGM,Las Vegas Strip Resorts,2025-Q3,1984.637,600.869,Segment Adjusted EBITDAR,S8
+MGM,Las Vegas Strip Resorts,2025-Q4,2166.054,735.348,Segment Adjusted EBITDAR,S1
+MGM,Las Vegas Strip Resorts,2026-Q1,2180.430,749.207,Segment Adjusted EBITDAR,S9
+MGM,Las Vegas Strip Resorts,2026-Q2,2170.045,735.118,Segment Adjusted EBITDAR,S10
+MGM,Las Vegas Strip Resorts,2026-Q3,1954.340,530.781,Segment Adjusted EBITDAR,S28
+Caesars,Las Vegas,2024-Q1,1028,440,Adjusted EBITDA,S12
+Caesars,Las Vegas,2024-Q2,1101,514,Adjusted EBITDA,S13
+Caesars,Las Vegas,2024-Q3,1062,472,Adjusted EBITDA,S14
+Caesars,Las Vegas,2024-Q4,1083,481,Adjusted EBITDA,S11
+Caesars,Las Vegas,2025-Q1,1003,433,Adjusted EBITDA,S12
+Caesars,Las Vegas,2025-Q2,1054,469,Adjusted EBITDA,S13
+Caesars,Las Vegas,2025-Q3,952,379,Adjusted EBITDA,S14
+Caesars,Las Vegas,2025-Q4,1040,447,Adjusted EBITDA,S3
+Caesars,Las Vegas,2026-Q1,1003,426,Adjusted EBITDA,S15
+Caesars,Las Vegas,2026-Q2,1017,410,Adjusted EBITDA,S16

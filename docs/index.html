@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MGM Resorts: Strip Performance Through Q3 2026</title>
+<meta name="description" content="Independent case study of MGM Resorts' Las Vegas Strip performance through Q3 2026: revenue rose 0.5% in the first nine months, led by casino revenue, and the data points to further gains from operating efficiency rather than pricing. Built from SEC filings, Nevada Gaming Control Board and LVCVA data.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="data.js?v=20261029b"></script>
+<script src="company.js?v=20261029b"></script>
+<style>
+:root{--gold:#B4975A;--goldd:#8A7140;--ink:#141414;--mut:#5E5A52;--slate:#5F6B7A;--slatel:#A7B0BB;--bg:#FFFFFF;--line:#E7E1D6}
+*{box-sizing:border-box}html,body{overflow-x:hidden}
+body{margin:0;font-family:Lato,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+header{background:#fff;border-bottom:3px solid var(--gold)}
+.hd{max-width:1180px;margin:0 auto;padding:18px 24px 14px}
+.eyebrow{color:var(--goldd);font-size:11px;letter-spacing:.22em;font-weight:700;text-transform:uppercase}
+h1{margin:5px 0 0;font-family:"Source Serif 4","Source Serif Pro",Georgia,serif;font-weight:700;font-size:clamp(23px,2.6vw,31px);line-height:1.13}
+.sub{margin:0;color:var(--mut);font-size:15px}
+.links{display:flex;gap:8px;flex-wrap:wrap}
+.links a{font-size:13px;font-weight:700;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:8px 14px;background:#fff;white-space:nowrap}
+.links a.pri{background:var(--ink);color:#fff;border-color:var(--ink)}
+.wrap{max-width:1180px;margin:0 auto;padding:14px 24px 20px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px}
+.tabs button{font:inherit;border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 18px;font-size:14px;cursor:pointer;color:var(--ink)}
+.tabs button.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.tabs button:not(.on):hover{border-color:var(--gold)}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:16px;min-width:0}
+.problem{border-left:4px solid var(--gold);font-size:16px;line-height:1.55}
+.problem p{margin:0}.problem .lab{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--goldd);font-weight:900;display:block;margin-bottom:4px}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:16px}.kpis .card{margin:0;border-top:3px solid var(--gold)}
+.kpis .card.bm{border-top-color:var(--slatel)}
+.kpi .l{font-size:11.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;font-weight:700}
+.kpi .v{font-family:"Source Serif 4","Source Serif Pro",Georgia,serif;font-weight:700;font-size:32px;margin:6px 0 2px;line-height:1.1}
+.kpi .s{font-size:13px;color:var(--goldd);font-weight:700}.kpi.bm .s{color:var(--slate)}
+h2{font-size:17px;margin:0 0 4px;font-weight:900}
+.note{font-size:13px;color:var(--mut);margin:0 0 10px;line-height:1.45}
+.row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.row>.card{margin-bottom:16px}
+.cv{position:relative;width:100%;height:300px}
+.src{font-size:11px;color:#8C8577;margin-top:8px}
+ol.find{list-style:none;margin:6px 0 0;padding:0;counter-reset:f}
+ol.find li{counter-increment:f;position:relative;padding:0 0 14px 36px;font-size:15px;line-height:1.5}
+ol.find li::before{content:counter(f);position:absolute;left:0;top:-2px;font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:24px;color:var(--gold)}
+ol.find li b{display:block;font-size:16px}
+.kf{font-size:14px;line-height:1.5;background:#FBF8F1;border-left:3px solid var(--gold);padding:12px 14px;border-radius:0 8px 8px 0}
+.kf .k{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--goldd);font-weight:900;margin-bottom:6px}
+.kf p{margin:0 0 6px}.kf p:last-child{margin:0}
+.ev{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:22px;align-items:center}
+.rec{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:16px}
+.rec .card{margin:0;border-top:3px solid var(--gold);display:flex;flex-direction:column}
+.rec .p{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--goldd);font-weight:900}
+.rec h3{font-family:"Source Serif 4","Source Serif Pro",Georgia,serif;font-size:20px;margin:4px 0 8px;line-height:1.2}
+.rec p{font-size:14.5px;line-height:1.5;margin:0 0 10px;color:#2B2925}.rec p.sg{background:#FBF8F1;border-left:3px solid var(--gold);padding:8px 10px;border-radius:0 6px 6px 0;font-size:14px}.rec p.sg b{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--goldd);margin-bottom:2px}.rec .imp .r b{color:var(--ink)}
+.rec .imp{margin-top:auto;display:flex;gap:10px;align-items:baseline;border-top:1px solid var(--line);padding-top:10px}
+.rec .imp .v{font-family:"Source Serif 4","Source Serif Pro",Georgia,serif;font-weight:700;font-size:28px}
+.rec .imp .r{font-size:12.5px;color:var(--mut)}
+.big{font-family:"Source Serif 4","Source Serif Pro",Georgia,serif;font-weight:700;font-size:44px;line-height:1;margin:6px 0 4px}
+.big+.s{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--goldd);font-weight:900;margin-bottom:10px}
+ul.kpi-list{margin:6px 0 0;padding-left:18px;font-size:14px;line-height:1.7}
+.k5{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-bottom:12px}.k5 .card{padding:12px 16px}.k5 .kpi .v{font-size:28px;margin:4px 0 1px}.k5 .kpi .l{font-size:11px}
+#ov .problem{padding:11px 18px;margin-bottom:12px;font-size:15.5px}#ov .problem .lab{display:inline;margin:0 8px 0 0}
+.sum{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:16px}.sum>.card{margin:0}
+.cvb{height:262px}
+.kfl{font-size:13.5px;line-height:1.45;margin:8px 0 0;padding-top:8px;border-top:1px solid var(--line);color:#2B2925}.kfl b{color:var(--goldd);font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-right:6px}
+.ri{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line)}.ri:first-of-type{padding-top:4px}
+.ri .iv{font-family:"Source Serif 4","Source Serif Pro",Georgia,serif;font-weight:700;font-size:28px;color:var(--ink);line-height:1}
+.ri b{display:block;font-size:15px;line-height:1.3}.ri span{display:block;font-size:12.5px;color:var(--mut);margin-top:2px}.ri span i{font-style:normal;color:var(--goldd);font-weight:700}
+.tot{margin-top:12px;background:#FBF8F1;border:1px solid #EFE6D2;border-radius:10px;padding:11px 14px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.tot .v{font-family:"Source Serif 4","Source Serif Pro",Georgia,serif;font-weight:700;font-size:28px;color:var(--goldd)}.tot .t{font-size:14px;color:#2B2925}
+table.scn{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}table.scn th{text-align:right;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--goldd);border-bottom:2px solid var(--gold);padding:6px 8px}table.scn th:first-child,table.scn td:first-child{text-align:left}
+table.scn td{text-align:right;padding:9px 8px;border-bottom:1px solid var(--line)}table.scn tr.t td{font-weight:900;border-bottom:none}table.scn td.b{background:#FBF8F1;font-weight:700}
+section{display:none}section.on{display:block}
+footer{max-width:1180px;margin:0 auto;padding:4px 24px 30px;font-size:12px;color:var(--mut);line-height:1.6}
+footer p{margin:0 0 6px}footer a{color:var(--goldd)}footer .by{margin-top:10px;padding-top:8px;border-top:1px solid #E4DED2}
+@media(max-width:900px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.row,.rec,.ev,.sum{grid-template-columns:1fr}#ov .problem .lab{display:block;margin-bottom:4px}.k5 .card:last-child{grid-column:span 2}.ev{gap:12px}}
+@media(max-width:480px){.hd,.wrap,footer{padding-left:14px;padding-right:14px}.card{padding:14px}.kpis{gap:10px}.kpi .v{font-size:24px}.kpi .l{font-size:10.5px}.kpi .s{font-size:12px}
+ .cv{height:260px}.tabs{gap:6px}.tabs button{padding:8px 13px;font-size:13px}.problem{font-size:15px}ol.find li{font-size:14.5px}.rec h3{font-size:18px}.big{font-size:38px}.k5 .card{padding:11px 12px}.k5 .kpi .v{font-size:23px}.ri{grid-template-columns:78px minmax(0,1fr);gap:10px}.ri .iv{font-size:23px}.tot .v{font-size:24px}.cvb{height:240px}table.scn{font-size:13px}table.scn th,table.scn td{padding:7px 4px}}
+
+.lead{margin:6px 0 0;color:#2B2925;font-size:15.5px;line-height:1.45;max-width:980px}
+.k6{grid-template-columns:repeat(6,minmax(0,1fr))}
+.k6 .kpi .v{font-size:25px}.k6 .kpi .l{font-size:10.5px;letter-spacing:.05em}.k6 .kpi .s{font-size:12px;line-height:1.35}
+.kpi.nt{border-top-color:#CFC8BA}.kpi.nt .s{color:var(--mut)}
+.op{display:grid;grid-template-columns:128px minmax(0,1fr);gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.op .iv{font-family:"Source Serif 4","Source Serif Pro",Georgia,serif;font-weight:700;font-size:27px;line-height:1}
+.op b{display:block;font-size:14.5px;line-height:1.3}.op .w{display:block;font-size:12.5px;color:var(--mut);margin-top:2px;line-height:1.4}.op .w i{font-style:normal;color:var(--goldd);font-weight:700}
+.legend2{display:flex;gap:14px;font-size:12px;color:var(--mut);margin:-4px 0 6px}.legend2 span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px;background:var(--c)}
+.eng{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:4px}
+.eng>div{background:#FBF8F1;border:1px solid #EFE6D2;border-radius:10px;padding:12px 14px}
+.eng .v{font-family:"Source Serif 4","Source Serif Pro",Georgia,serif;font-weight:700;font-size:26px;color:#2F6B4A}
+.eng .l{font-size:13px;font-weight:700;margin-top:2px}.eng .s{font-size:12.5px;color:var(--mut);margin-top:2px;line-height:1.4}
+@media(max-width:1100px){.k6{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:900px){.eng{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.k6{grid-template-columns:repeat(2,minmax(0,1fr))}.k6 .card:last-child{grid-column:auto}.k6 .kpi .v{font-size:22px}.op{grid-template-columns:104px minmax(0,1fr);gap:10px}.op .iv{font-size:22px}.lead{font-size:14.5px}.eng .v{font-size:22px}}
+:root{--co-main:#8A7140;--co-tint:#FBF8F1;--co-mut:#5E5A52;--co-ink:#141414;--co-line:#E7E1D6}
+.co-top{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:16px;margin-bottom:16px}.co-top>.card{margin:0}
+.co-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:16px}.co-row>.card{margin:0}
+.co-bg{font-size:14.5px;line-height:1.5;margin:6px 0 14px}
+.co-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.co-facts>div{background:var(--co-tint);border-radius:10px;padding:10px 12px;min-width:0}
+.co-facts span{display:block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--co-mut);font-weight:700}
+.co-facts b{display:block;font-size:15px;margin-top:3px;line-height:1.3}
+.co-facts i{display:block;font-style:normal;font-size:11.5px;color:var(--co-mut);margin-top:2px}
+ol.co-tl{list-style:none;margin:8px 0 0;padding:0 0 0 2px;position:relative}
+ol.co-tl li{display:grid;grid-template-columns:58px minmax(0,1fr);gap:10px;align-items:baseline;padding:0 0 11px;position:relative}
+ol.co-tl li::before{content:"";position:absolute;left:47px;top:6px;width:8px;height:8px;border-radius:50%;background:var(--co-main)}
+ol.co-tl li::after{content:"";position:absolute;left:50.5px;top:16px;bottom:-2px;width:1px;background:var(--co-line)}
+ol.co-tl li:last-child::after{display:none}ol.co-tl li:last-child{padding-bottom:0}
+ol.co-tl span{font-weight:800;font-size:14px;color:var(--co-main)}
+ol.co-tl p{margin:0;font-size:13.5px;line-height:1.4;padding-left:6px}
+.co-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.co-fin{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
+.co-two h4{margin:2px 0 6px;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--co-mut)}
+.co-cv{position:relative;height:190px;width:100%}
+.co-cv canvas{position:absolute;inset:0;width:100%!important;height:100%!important}
+.co-sk{font-size:12.5px;color:var(--co-mut);margin:6px 0 0}.co-sk b{color:var(--co-ink)}.co-sk b.up{color:#1E7B34}.co-sk b.dn{color:#B4232F}
+.co-kf{font-size:13.5px;line-height:1.45;margin:12px 0 0;padding-top:10px;border-top:1px solid var(--co-line)}
+.co-kf b{display:inline-block;margin-right:8px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--co-main)}
+.co-ev{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:6px}
+.co-ev>div{border-left:3px solid var(--co-main);background:var(--co-tint);border-radius:0 10px 10px 0;padding:10px 12px;min-width:0}
+.co-ev span{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--co-mut);font-weight:700}
+.co-ev b{display:block;font-size:14.5px;margin:3px 0 3px;line-height:1.3}.co-ev p{margin:0;font-size:13px;line-height:1.45}
+#coRoot>.card{margin-bottom:12px}
+.co-h4{margin:2px 0 6px;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--co-mut)}
+.co-src{font-size:11px;color:var(--co-mut);margin:0 0 14px;line-height:1.5}
+@media(max-width:900px){.co-top,.co-row{grid-template-columns:1fr}.co-ev{grid-template-columns:1fr}}
+@media(max-width:600px){.co-facts{grid-template-columns:repeat(2,minmax(0,1fr))}.co-two{grid-template-columns:1fr;gap:12px}.co-cv{height:170px}}
+@media(max-width:480px){.co-bg{font-size:14px}.co-facts b{font-size:14px}ol.co-tl li{grid-template-columns:50px minmax(0,1fr)}ol.co-tl li::before{left:40px}ol.co-tl li::after{left:43.5px}}
+</style>
+</head>
+<body>
+<header><div class="hd">
+ <div class="eyebrow">Portfolio Case Study · Las Vegas Strip · 2026 Year to Date</div>
+ <h1>MGM Resorts: Strip Performance Through Q3 2026</h1>
+ <p class="lead" id="lead"></p>
+</div></header>
+<div class="wrap">
+<nav class="tabs" id="tabs"><button class="on" data-t="ov">Overview</button><button data-t="co">Company</button><button data-t="st">Strengths</button><button data-t="op">Growth Opportunities</button></nav>
+
+<section id="ov" class="on">
+ <div class="kpis k5 k6" id="kOv"></div>
+ <div class="sum">
+  <div class="card"><h2>Strip Revenue Held Steady Through Q3 2026</h2><p class="note">MGM Las Vegas Strip Revenue by Quarter ($M)</p>
+   <div class="legend2"><span style="--c:#BDB7AC">2025</span><span style="--c:#B4975A">2026</span></div>
+   <div class="cv cvb"><canvas id="cQtr"></canvas></div>
+   <p class="kfl" id="kfQtr"></p></div>
+  <div class="card"><h2>Growth Opportunities</h2><p class="note">KPI Signal and Observation</p><div id="ovOps"></div><div class="tot" id="ovTot"></div></div>
+ </div>
+</section>
+
+<section id="co"><div id="coRoot"></div></section>
+
+<section id="st">
+ <div class="card"><h2>1. Casino Strength on the Strip in Q3 2026</h2><p class="note">MGM Las Vegas Strip Casino, Q3 2026, Year over Year (%)</p>
+  <div class="ev"><div><div class="cv"><canvas id="cPeer"></canvas></div></div><div class="kf" id="kfPeer"></div></div></div>
+ <div class="card"><h2>2. Guests Still Value the Strip</h2><p class="note">Las Vegas Strip Average Room Rate ($)</p>
+  <div class="ev"><div><div class="cv"><canvas id="cIndex"></canvas></div></div><div class="kf" id="kfIndex"></div></div></div>
+ <div class="card"><h2>3. Growth Across the Company</h2><p class="note">MGM Resorts, First Nine Months 2026, Year over Year</p>
+  <div class="eng" id="eng"></div></div>
+</section>
+
+<section id="op">
+ <div class="rec" id="recs"></div>
+ <div class="row">
+  <div class="card"><h2>Operating Margin Has Room to Recover</h2><p class="note">MGM Las Vegas Strip Operating Margin (%)</p><div class="cv"><canvas id="cMargin"></canvas></div>
+   <p class="kfl" id="kfMargin"></p></div>
+  <div class="card"><h2>Midweek Occupancy Has Room to Grow</h2><p class="note">Las Vegas Hotel Occupancy Rate, Jan to Aug 2026</p><div class="cv"><canvas id="cWeek"></canvas></div>
+   <p class="kfl" id="kfWeek"></p></div>
+ </div>
+ <div class="card"><h2>KPIs to Watch</h2><p class="note">Latest Value and Historical Reference</p><div id="kpiTbl"></div>
+  </div>
+</section>
+</div>
+<footer id="foot"></footer>
+
+<script>
+const G='#B4975A',GD='#8A7140',GL='#D9C9A3',INK='#141414',SL='#5F6B7A',SLL='#A7B0BB',WM='#D8D1C3',GRID='#EEE9DF',GR='#3E7B5A',NEU='#BDB7AC';
+const M=D.der.MGM,C=D.der.Caesars,K=D.mk,Q=D.sig,P=D.pos;
+const mob=()=>window.innerWidth<=480;
+const f0=v=>v.toLocaleString('en-US',{maximumFractionDigits:0}),f1=v=>v.toFixed(1),sg=v=>(v>=0?'+':'')+v.toFixed(1),sg0=v=>(v>=0?'+':'')+v.toFixed(0);
+Chart.defaults.font.family='Lato, "Helvetica Neue", Arial, sans-serif';Chart.defaults.font.size=12;Chart.defaults.color='#3A3732';
+Chart.defaults.plugins.legend.labels.boxWidth=12;Chart.defaults.plugins.legend.labels.boxHeight=12;Chart.defaults.maintainAspectRatio=false;Chart.defaults.responsive=true;
+Chart.defaults.plugins.tooltip.backgroundColor='#141414';
+const lbl={id:'lbl',afterDatasetsDraw(ch,a,o){if(!o||!o.on)return;const c=ch.ctx;c.save();c.font=`700 ${mob()?10:12}px Lato, Arial`;
+ ch.data.datasets.forEach((ds,i)=>{const m=ch.getDatasetMeta(i);if(m.hidden||ds.noLbl)return;m.data.forEach((el,j)=>{const v=ds.data[j];if(v==null)return;
+ const t=o.fmt?o.fmt(v,ds,j):v;c.fillStyle=ds.lblColor||'#333';const hz=ch.options.indexAxis==='y';
+ if(hz){c.textAlign=v>=0?'left':'right';c.textBaseline='middle';c.fillText(t,el.x+(v>=0?6:-6),el.y);}else{c.textAlign='center';c.textBaseline=v>=0?'bottom':'top';const off=ch.config.type==='line'?9:4;c.fillText(t,el.x,el.y+(v>=0?-off:off));}});});c.restore();}};
+Chart.register(lbl);
+const ax=(o={})=>Object.assign({grid:{color:GRID},border:{display:false},ticks:{}},o);
+const charts={};
+function mk(id,cfg){if(charts[id])charts[id].destroy();charts[id]=new Chart(document.getElementById(id),cfg);}
+const kf=t=>`<span class="k">Key findings</span><p>${t}</p>`;
+document.getElementById('lead').innerHTML=`MGM's Las Vegas Strip revenue rose ${f1(P.n9_26_rev_pct)}% in the first nine months of 2026, as casino revenue grew ${f0(P.q3_26_casino_pct)}% in Q3 while room rates eased. The data points to further gains from operating efficiency rather than pricing.`;
+
+const OPS=[
+ {tag:'Cost Efficiency',iv:()=>sg(Q.n9_26_cost_pct)+'%',sig:()=>`Operating costs ${sg(Q.n9_26_cost_pct)}% vs revenue ${sg(P.n9_26_rev_pct)}%, First Nine Months 2026`,
+  act:'Room to Reduce Cost Leakage',more:()=>'Spend guests never see, such as energy, purchasing and back office, may offer savings.',
+  goal:()=>`Operating margin was ${f1(Q.margin24)}% in 2024`},
+ {tag:'Labor Productivity',iv:()=>f0(Q.n9_26_payroll_share)+'%',sig:()=>`Payroll ${f1(Q.n9_26_payroll_share)}% of revenue in the First Nine Months 2026, up from ${f1(Q.n9_25_payroll_share)}% a year earlier`,
+  act:'Staffing Aligned with Demand',more:()=>'Demand based scheduling could shorten peak wait times while protecting service.',
+  goal:()=>`Payroll was ${f1(Q.payroll_share24)}% of revenue in 2024`},
+ {tag:'Capacity Utilization',iv:()=>f0(Q.midweek_gap_pts)+' points',sig:()=>`Midweek occupancy rate ${f1(K.ytd26_mid)}% vs weekend ${f1(K.ytd26_wkd)}%`,
+  act:'Opportunity to Grow Midweek Occupancy',more:()=>'Conventions, entertainment and MGM Rewards packages could fill more weeknights.',
+  goal:()=>`A third of the gap equals about ${f0(Q.midweek_third_pts)} percentage points`}];
+
+function overview(){
+ document.getElementById('kOv').innerHTML=[
+  ['Strip Revenue, First Nine Months 2026','$'+(P.n9_26_rev/1000).toFixed(2)+'B',`${sg(P.n9_26_rev_pct)}% year over year`],
+  ['Q3 Strip Operating Profit','$'+f0(P.q3_26_prof)+'M',`${sg(P.q3_26_prof_pct)}%; operating margin ${f1(P.q3_26_margin)}%`],
+  ['Q3 Casino Revenue Growth',sg0(P.q3_26_casino_pct)+'%',`$${f0(P.q3_26_casino)}M, year over year`],
+  ['Q3 Occupancy Rate',f0(P.occ_2026_q3)+'%',`vs ${f1(K.q3_26_strip_occ)}% Strip average`],
+  ['MGM Digital Revenue, First Nine Months 2026',sg0(P.n9_26_digital_pct)+'%','Online gaming, year over year','m'],
+  ['Operating Costs, First Nine Months 2026',sg(Q.n9_26_cost_pct)+'%',`vs revenue ${sg(P.n9_26_rev_pct)}%`,'nt']
+ ].map(([l,v,s,c])=>`<div class="card kpi ${c||''}"><div class="l">${l}</div><div class="v">${v}</div><div class="s">${s}</div></div>`).join('');
+ const r25=[P.q1_25_rev,P.q2_25_rev,P.q3_25_rev].map(x=>+x.toFixed(0)),r26=[P.q1_26_rev,P.q2_26_rev,P.q3_26_rev].map(x=>+x.toFixed(0)),gp=[P.q1_26_rev_pct,P.q2_26_rev_pct,P.q3_26_rev_pct];
+ const grow={id:'grow',afterDatasetsDraw(ch){const c=ch.ctx,m=ch.getDatasetMeta(1);c.save();c.font=`900 ${mob()?12:14}px Lato, Arial`;c.fillStyle=GR;c.textAlign='center';c.textBaseline='bottom';
+  m.data.forEach((el,j)=>{c.fillStyle=gp[j]<0?SL:GR;c.fillText(sg(gp[j])+'%',el.x,el.y-(mob()?18:22));});c.restore();}};
+ mk('cQtr',{type:'bar',data:{labels:['Q1','Q2','Q3'],datasets:[{label:'2025',data:r25,backgroundColor:NEU,lblColor:SL,borderRadius:4,barPercentage:.78,categoryPercentage:.7},{label:'2026',data:r26,backgroundColor:G,lblColor:INK,borderRadius:4,barPercentage:.78,categoryPercentage:.7}]},
+  plugins:[grow],options:{layout:{padding:{top:4}},plugins:{lbl:{on:1,fmt:x=>'$'+f0(x)+'M'},legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.dataset.label}: $${f0(c.raw)}M`}}},
+   scales:{y:ax({min:0,max:2800,ticks:{stepSize:700,callback:x=>'$'+f0(x)+'M'}}),x:ax({grid:{display:false},ticks:{font:{size:mob()?12:14,weight:'700'},color:INK}})}}});
+ document.getElementById('kfQtr').innerHTML=`<b>Key finding</b>Revenue rose in Q1 and Q2, then eased ${f1(Math.abs(P.q3_26_rev_pct))}% in Q3 as room rates softened, while casino revenue grew ${f0(P.q3_26_casino_pct)}%. Keeping cost growth below revenue growth is a clear opportunity.`;
+ document.getElementById('ovOps').innerHTML=OPS.map(o=>`<div class="op"><div class="iv">${o.iv()}</div><div><b>${o.act}</b><span class="w">${o.sig()}</span></div></div>`).join('');
+ document.getElementById('ovTot').innerHTML=`<span class="t"><b>Reference Point:</b> operating margin was ${f1(Q.margin24)}% in 2024, vs ${f1(Q.n9_26_margin)}% in the First Nine Months 2026</span>`;
+}
+
+function strengths(){
+ const pl=['Table Games Drop','Casino Revenue','Table Games Win'];
+ mk('cPeer',{type:'bar',data:{labels:pl,datasets:[{label:'MGM Las Vegas Strip',data:[P.q3_26_drop_pct,P.q3_26_casino_pct,P.q3_26_tablewin_pct].map(x=>+x.toFixed(1)),backgroundColor:[NEU,G,NEU],lblColor:INK,borderRadius:3,barPercentage:.7,categoryPercentage:.7}]},
+  options:{plugins:{lbl:{on:1,fmt:x=>'+'+x.toFixed(1)+'%'},legend:{display:false}},scales:{y:ax({min:0,max:20,ticks:{stepSize:5,callback:x=>x+'%'}}),x:ax({grid:{display:false},ticks:{maxRotation:0,autoSkip:false,font:{size:mob()?11:13,weight:'700'},color:INK}})}}});
+ document.getElementById('kfPeer').innerHTML=kf(`In Q3 2026, Strip table games drop rose ${sg(P.q3_26_drop_pct)}%, casino revenue ${sg(P.q3_26_casino_pct)}% and table games win ${sg(P.q3_26_tablewin_pct)}% year over year, showing stronger table play even as room rates eased.`);
+ const L=D.lva.filter(r=>r.period==='Full year');const b0=L[0];
+ mk('cIndex',{type:'bar',data:{labels:L.map(r=>String(r.year)),datasets:[{label:'Strip room rate',data:L.map(r=>+r.strip_adr.toFixed(0)),backgroundColor:G,lblColor:INK,borderRadius:4,barPercentage:.6}]},
+  options:{plugins:{lbl:{on:1,fmt:x=>'$'+f0(x)},legend:{display:false},tooltip:{callbacks:{label:c=>` Strip room rate $${L[c.dataIndex].strip_adr.toFixed(2)}`}}},scales:{y:ax({min:0,max:250,ticks:{stepSize:50,callback:x=>'$'+x}}),x:ax({grid:{display:false},ticks:{font:{weight:'700'},color:INK}})}}});
+ document.getElementById('kfIndex').innerHTML=kf(`Strip room rates were ${f0(K.adr25_vs2019_pct)}% above 2019 in 2025, and MGM's occupancy rate was ${f0(M.occ25)}%, a sign guests still value the Strip.`);
+ document.getElementById('eng').innerHTML=[
+  [sg(P.n9_26_cons_pct)+'%','Company Revenue',`$${(P.n9_26_cons_rev/1000).toFixed(1)}B`],
+  [sg(P.n9_26_digital_pct)+'%','MGM Digital Revenue','Online gaming'],
+  [sg(P.n9_26_china_pct)+'%','MGM China Revenue',`$${(P.n9_26_china_rev/1000).toFixed(1)}B, record Q3`],
+  ['$'+f0(P.n9_26_betmgm)+'M','BetMGM Operating Income',`MGM's share, vs $${f0(P.n9_25_betmgm)}M in 2025`]
+ ].map(([v,l,s])=>`<div><div class="v">${v}</div><div class="l">${l}</div><div class="s">${s}</div></div>`).join('');
+}
+
+function opps(){
+ document.getElementById('recs').innerHTML=OPS.map(o=>`<div class="card"><div class="p">${o.tag}</div><h3>${o.act}</h3><p class="sg"><b>KPI Signal</b>${o.sig()}</p><p>${o.more()}</p><div class="imp"><span class="r"><b>Reference Point:</b> ${o.goal()}</span></div></div>`).join('');
+ mk('cMargin',{type:'bar',data:{labels:['2023','2024','2025','Jan to Sep 2026'],datasets:[{label:'Margin',data:[Q.margin23,Q.margin24,Q.margin25,Q.n9_26_margin].map(x=>+x.toFixed(1)),backgroundColor:[NEU,NEU,NEU,G],borderRadius:4,lblColor:INK,barPercentage:.6}]},
+  options:{plugins:{lbl:{on:1,fmt:x=>x.toFixed(1)+'%'},legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.raw}% operating margin`}}},scales:{y:ax({min:0,max:40,ticks:{stepSize:10,callback:x=>x+'%'}}),x:ax({grid:{display:false},ticks:{font:{size:13,weight:'700'},color:INK}})}}});
+ document.getElementById('kfMargin').innerHTML=`<b>Key finding</b>Costs grew faster than revenue, so operating margin declined from ${f1(Q.margin24)}% to ${f1(Q.n9_26_margin)}%. Back of house efficiency could help restore it.`;
+ const wl=['Weekend','Midweek'];
+ mk('cWeek',{type:'bar',data:{labels:wl,datasets:[{label:'2026',data:[K.ytd26_wkd,K.ytd26_mid].map(x=>+x.toFixed(1)),backgroundColor:[SLL,G],borderRadius:4,lblColor:INK,barPercentage:.55}]},
+  options:{plugins:{lbl:{on:1,fmt:x=>x.toFixed(1)+'%'},legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.raw}% occupancy rate`}}},scales:{y:ax({min:0,max:100,ticks:{stepSize:25,callback:x=>x+'%'}}),x:ax({grid:{display:false},ticks:{font:{size:14,weight:'700'},color:INK}})}}});
+ document.getElementById('kfWeek').innerHTML=`<b>Key finding</b>Midweek occupancy is ${f0(Q.midweek_gap_pts)} percentage points below weekends. Higher midweek occupancy would spread fixed costs over more guests.`;
+ const rows=[['Operating Margin, First Nine Months 2026',f1(Q.n9_26_margin)+'%',f1(Q.margin24)+'% in 2024'],
+  ['Operating Cost Growth vs Revenue Growth, First Nine Months 2026',sg(Q.n9_26_cost_pct)+'% vs '+sg(P.n9_26_rev_pct)+'%','Revenue growth '+sg(P.n9_26_rev_pct)+'%'],
+  ['Payroll as % of Revenue, First Nine Months 2026',f1(Q.n9_26_payroll_share)+'%',f1(Q.n9_25_payroll_share)+'% a year earlier'],
+  ['Midweek Occupancy Rate, Las Vegas, Jan to Aug 2026',f1(K.ytd26_mid)+'%','Weekend '+f1(K.ytd26_wkd)+'%'],
+  ['MGM Strip Occupancy Rate, Q3',f0(P.occ_2026_q3)+'%','Strip average '+f1(K.q3_26_strip_occ)+'%']];
+ document.getElementById('kpiTbl').innerHTML=`<table class="scn"><tr><th>KPI</th><th>Latest</th><th>Reference Point</th></tr>`+rows.map(r=>`<tr><td>${r[0]}</td><td class="b">${r[1]}</td><td>${r[2]}</td></tr>`).join('')+`</table>`;
+}
+document.getElementById('foot').innerHTML=`<p>Sources: MGM Resorts, Caesars and Wynn Resorts SEC filings, Nevada Gaming Control Board, LVCVA, MGM Resorts and BetMGM news releases, Yahoo Finance share prices to Oct 29, 2026.</p><p class="by">Independent case study, not affiliated with MGM Resorts International</p>`;
+const RN={ov:overview,co:()=>{CO_BUILD();CO_RENDER();},st:strengths,op:opps};
+function show(t){document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===t));RN[t]();}
+document.querySelectorAll('#tabs button').forEach(b=>b.addEventListener('click',()=>show(b.dataset.t)));
+let lw=window.innerWidth;window.addEventListener('resize',()=>{if((lw<=480)!==(window.innerWidth<=480)){lw=window.innerWidth;RN[document.querySelector('#tabs button.on').dataset.t]();}});
+show('ov');
+</script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+scope,metric,value
+MGM,rev24,8816.113
+MGM,rev25,8441.503
+MGM,rev_chg,-374.61
+MGM,rev_pct,-4.2492
+MGM,prof24,3106.543
+MGM,prof25,2857.873
+MGM,prof_chg,-248.67
+MGM,prof_pct,-8.0047
+MGM,margin24,35.2371
+MGM,margin25,33.855
+MGM,decremental,66.381
+MGM,noncasino_share24,77.7663
+MGM,noncasino_share25,76.1452
+MGM,noncasino_chg,-428.165
+MGM,labor24,2635.565
+MGM,labor25,2623.256
+MGM,labor_pct,-0.467
+MGM,labor_share24,29.8949
+MGM,labor_share25,31.0757
+MGM,h1_26_rev_pct,1.3905
+MGM,h1_26_prof_pct,-2.4533
+MGM,occ24,94.0
+MGM,occ25,92.0
+MGM,adr24,260.0
+MGM,adr25,249.0
+MGM,revpar24,245.0
+MGM,revpar25,229.0
+MGM,value_rooms,10402.0
+MGM,value_room_share,28.1135
+MGM,betmgm24,-110.079
+MGM,betmgm25,59.634
+Caesars,rev24,4274.0
+Caesars,rev25,4049.0
+Caesars,rev_chg,-225.0
+Caesars,rev_pct,-5.2644
+Caesars,prof24,1907.0
+Caesars,prof25,1728.0
+Caesars,prof_chg,-179.0
+Caesars,prof_pct,-9.3865
+Caesars,margin24,44.6186
+Caesars,margin25,42.6772
+Caesars,decremental,79.5556
+Caesars,noncasino_share24,73.912
+Caesars,noncasino_share25,73.5243
+Caesars,noncasino_chg,-182.0
+Caesars,labor24,1177.0
+Caesars,labor25,1206.0
+Caesars,labor_pct,2.4639
+Caesars,labor_share24,27.5386
+Caesars,labor_share25,29.7851
+Caesars,h1_26_rev_pct,-1.7987
+Caesars,h1_26_prof_pct,-7.3171
+Caesars,occ24,97.5
+Caesars,occ25,94.1
+MGM highlights,cons_rev24,17240.545
+MGM highlights,cons_rev25,17537.683
+MGM highlights,cons_rev_pct,1.7235
+MGM highlights,china_rev_pct,10.9229
+MGM highlights,china_prof_pct,10.6766
+MGM highlights,regional_rev_pct,1.398
+MGM highlights,regional_prof_pct,1.7202
+MGM highlights,digital_rev_pct,18.5101
+MGM highlights,betmgm_dist25,135.0
+MGM highlights,q4_casino_pct,13.5729
+MGM highlights,q4_table_win_pct,20.6633
+MGM highlights,mgm_drop_pct,1.6423
+MGM highlights,mgm_handle_pct,3.0411
+MGM highlights,czr_drop_pct,-7.8105
+MGM highlights,czr_handle_pct,-1.3436
+MGM highlights,occ_gap_pts,8.8
+MGM highlights,adr_premium_pct,26.1079
+MGM highlights,q2_26_rev_pct,2.6175
+MGM highlights,q1_26_rev_pct,0.1981
+MGM highlights,q1_26_rev,2180.43
+MGM highlights,q1_25_rev,2176.12
+MGM highlights,q1_26_prof,749.207
+MGM highlights,q1_25_prof,811.16
+MGM highlights,q1_26_prof_pct,-7.6376
+MGM highlights,q1_26_margin,34.3605
+MGM highlights,q1_25_margin,37.2755
+MGM highlights,q2_26_rev,2170.045
+MGM highlights,q2_25_rev,2114.692
+MGM highlights,q2_26_prof,735.118
+MGM highlights,q2_25_prof,710.496
+MGM highlights,q2_26_prof_pct,3.4655
+MGM highlights,q2_26_margin,33.8757
+MGM highlights,q2_25_margin,33.5981
+MGM highlights,h1_26_rev,4350.475
+MGM highlights,h1_25_rev,4290.812
+MGM highlights,h1_26_prof,1484.325
+MGM highlights,h1_25_prof,1521.656
+MGM highlights,q2_26_casino,536.0
+MGM highlights,q2_25_casino,457.0
+MGM highlights,q2_26_casino_pct,17.2867
+MGM highlights,q2_26_tablewin_pct,27.0423
+MGM highlights,q2_26_roomrev,717.0
+MGM highlights,q2_25_roomrev,735.0
+MGM highlights,h1_26_cons_rev,8905.711
+MGM highlights,h1_26_cons_pct,2.5773
+MGM highlights,h1_26_china_rev,2222.916
+MGM highlights,h1_26_china_pct,3.9929
+MGM highlights,h1_26_digital_rev,379.049
+MGM highlights,h1_26_digital_pct,29.8473
+MGM highlights,h1_26_betmgm,30.457
+MGM highlights,h1_25_betmgm,6.569
+MGM highlights,occ_2026_q1,92.0
+MGM highlights,adr_2026_q1,257.0
+MGM highlights,revpar_2026_q1,238.0
+MGM highlights,occ_2026_q2,93.0
+MGM highlights,adr_2026_q2,242.0
+MGM highlights,revpar_2026_q2,224.0
+MGM highlights,occ_2025_q2,93.0
+MGM highlights,adr_2025_q2,252.0
+MGM highlights,revpar_2025_q2,235.0
+MGM highlights,q3_26_rev,1954.34
+MGM highlights,q3_25_rev,1984.637
+MGM highlights,q3_26_prof,530.781
+MGM highlights,q3_25_prof,600.869
+MGM highlights,q3_26_rev_pct,-1.5266
+MGM highlights,q3_26_prof_pct,-11.6644
+MGM highlights,q3_26_margin,27.1591
+MGM highlights,q3_25_margin,30.276
+MGM highlights,q3_26_casino,488.187
+MGM highlights,q3_25_casino,450.273
+MGM highlights,q3_26_casino_pct,8.4202
+MGM highlights,q3_26_tablewin_pct,17.4757
+MGM highlights,q3_26_drop_pct,5.2825
+MGM highlights,q3_26_roomrev,621.578
+MGM highlights,q3_25_roomrev,660.488
+MGM highlights,q3_26_roomrev_pct,-5.8911
+MGM highlights,n9_26_rev,6304.815
+MGM highlights,n9_25_rev,6275.449
+MGM highlights,n9_26_prof,2015.106
+MGM highlights,n9_25_prof,2122.525
+MGM highlights,n9_26_rev_pct,0.468
+MGM highlights,n9_26_prof_pct,-5.0609
+MGM highlights,n9_26_payroll,2034.876
+MGM highlights,n9_25_payroll,1967.561
+MGM highlights,n9_26_cons_rev,13117.602
+MGM highlights,n9_26_cons_pct,1.432
+MGM highlights,n9_26_china_rev,3361.083
+MGM highlights,n9_26_china_pct,4.2102
+MGM highlights,n9_26_digital_rev,562.715
+MGM highlights,n9_26_digital_pct,20.7683
+MGM highlights,n9_26_betmgm,57.2
+MGM highlights,n9_25_betmgm,30.294
+MGM highlights,occ_2026_q3,89.0
+MGM highlights,adr_2026_q3,218.0
+MGM highlights,revpar_2026_q3,193.0
+MGM highlights,occ_2025_q3,89.0
+MGM highlights,adr_2025_q3,236.0
+MGM highlights,revpar_2025_q3,210.0
+Las Vegas market,visitors24,41676300.0
+Las Vegas market,visitors25,38545700.0
+Las Vegas market,visitors_pct,-7.5117
+Las Vegas market,visitors_vs2019_pct,-9.3548
+Las Vegas market,conv24,5994800.0
+Las Vegas market,conv25,5988200.0
+Las Vegas market,conv_pct,-0.1101
+Las Vegas market,adr19,143.21
+Las Vegas market,adr24,206.12
+Las Vegas market,adr25,197.45
+Las Vegas market,adr_pct,-4.2063
+Las Vegas market,adr24_vs2019_pct,43.9285
+Las Vegas market,adr25_vs2019_pct,37.8745
+Las Vegas market,revpar24,178.09
+Las Vegas market,revpar25,164.28
+Las Vegas market,revpar_pct,-7.7545
+Las Vegas market,occ24,86.4
+Las Vegas market,occ25,83.2
+Las Vegas market,mid24,80.4
+Las Vegas market,mid25,76.6
+Las Vegas market,wkd24,90.8
+Las Vegas market,wkd25,88.8
+Las Vegas market,gaming24,8812.484
+Las Vegas market,gaming25,8815.212
+Las Vegas market,gaming_pct,0.031
+Las Vegas market,win_per_visitor24,211.4507
+Las Vegas market,win_per_visitor25,228.6951
+Las Vegas market,air_pct,-5.9185
+Las Vegas market,ytd26_visitors_pct,-0.0891
+Las Vegas market,ytd26_conv_pct,10.4504
+Las Vegas market,ytd26_air_pct,-7.1486
+Las Vegas market,too_exp22,14.0
+Las Vegas market,too_exp25,22.0
+Las Vegas market,too_exp24,18.0
+Las Vegas market,intl_share25,12.0
+Las Vegas market,conv_spend,1795.0
+Las Vegas market,leis_spend,1230.0
+Las Vegas market,q2_26_strip_occ,85.2
+Las Vegas market,ytd26_gaming_pct,2.9
+Las Vegas market,ytd26_gaming,5936.346
+Las Vegas market,ytd26_adr,196.11
+Las Vegas market,ytd26_adr_pct,2.0
+Las Vegas market,ytd26_conv,4532000.0
+Las Vegas market,ytd26_visitors,25789100.0
+Las Vegas market,ytd26_wkd,88.8
+Las Vegas market,ytd26_mid,76.7
+Las Vegas market,ytd26_strip_occ,83.5
+Las Vegas market,q3_26_strip_occ,79.1

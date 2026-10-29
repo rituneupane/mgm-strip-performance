@@ -1,0 +1,53 @@
+company,item,period,value_musd,source_id,note
+MGM,Las Vegas Strip Resorts casino revenue,2025-Q4,569,S1,"key gaming statistics table, +13% vs prior-year quarter"
+MGM,Las Vegas Strip Resorts casino revenue,2024-Q4,501,S1,
+MGM,Las Vegas Strip Resorts table games win,2025-Q4,473,S1,"+21% vs prior-year quarter"
+MGM,Las Vegas Strip Resorts table games win,2024-Q4,392,S1,
+MGM,BetMGM North America Venture distributions to MGM Resorts,2025-Q4,135,S1,"returning over 20% of MGM's cash investment (S1)"
+MGM,MGM China distributions to MGM Resorts,2025,153,S1,CFO quote in S1
+MGM,Las Vegas Strip Resorts casino revenue,2026-Q1,513,S9,"key gaming statistics table, (5)% vs prior-year quarter"
+MGM,Las Vegas Strip Resorts casino revenue,2025-Q1,538,S9,prior-year column
+MGM,Las Vegas Strip Resorts casino revenue,2026-Q2,536,S10,"key gaming statistics table, +17% vs prior-year quarter"
+MGM,Las Vegas Strip Resorts casino revenue,2025-Q2,457,S10,prior-year column
+MGM,Las Vegas Strip Resorts table games win,2026-Q1,399,S9,"(1)% vs prior-year quarter"
+MGM,Las Vegas Strip Resorts table games win,2025-Q1,404,S9,prior-year column
+MGM,Las Vegas Strip Resorts table games win,2026-Q2,451,S10,"+27% vs prior-year quarter; win % 29.6% vs 22.9%"
+MGM,Las Vegas Strip Resorts table games win,2025-Q2,355,S10,prior-year column
+MGM,Las Vegas Strip Resorts room revenue,2026-Q1,751,S9,key hotel statistics table
+MGM,Las Vegas Strip Resorts room revenue,2025-Q1,750,S9,prior-year column
+MGM,Las Vegas Strip Resorts room revenue,2026-Q2,717,S10,"key hotel statistics table, (2)% vs prior-year quarter"
+MGM,Las Vegas Strip Resorts room revenue,2025-Q2,735,S10,prior-year column
+MGM,Las Vegas Strip Resorts net revenue (six months),2026-H1,4350.475,S10,segment table
+MGM,Las Vegas Strip Resorts net revenue (six months),2025-H1,4290.812,S10,segment table
+MGM,Las Vegas Strip Resorts Segment Adjusted EBITDAR (six months),2026-H1,1484.325,S10,segment table
+MGM,Las Vegas Strip Resorts Segment Adjusted EBITDAR (six months),2025-H1,1521.656,S10,segment table
+MGM,Consolidated net revenues (six months),2026-H1,8905.711,S10,record 1Q (S9) and record 2Q (S10) consolidated revenue
+MGM,Consolidated net revenues (six months),2025-H1,8681.952,S10,
+MGM,MGM China net revenues (six months),2026-H1,2222.916,S10,
+MGM,MGM China net revenues (six months),2025-H1,2137.565,S10,
+MGM,MGM Digital net revenues (six months),2026-H1,379.049,S10,"mainly LeoVegas; excludes BetMGM"
+MGM,MGM Digital net revenues (six months),2025-H1,291.919,S10,
+MGM,MGM share of BetMGM North America Venture operating income (six months),2026-H1,30.457,"S9,S10","Q1 7.360 + Q2 23.097"
+MGM,MGM share of BetMGM North America Venture operating income (six months),2025-H1,6.569,"S9,S10","Q1 -15.201 + Q2 21.770"
+MGM,Las Vegas Strip Resorts casino revenue,2026-Q3,488.187,S28,"key gaming statistics table, +8% vs prior-year quarter"
+MGM,Las Vegas Strip Resorts casino revenue,2025-Q3,450.273,S28,prior-year column
+MGM,Las Vegas Strip Resorts table games win,2026-Q3,363,S28,"+17% vs prior-year quarter; win % 25.3% vs 22.6%"
+MGM,Las Vegas Strip Resorts table games win,2025-Q3,309,S28,prior-year column
+MGM,Las Vegas Strip Resorts table games drop,2026-Q3,1435,S28,"+5% vs prior-year quarter"
+MGM,Las Vegas Strip Resorts table games drop,2025-Q3,1363,S28,prior-year column
+MGM,Las Vegas Strip Resorts room revenue,2026-Q3,621.578,S28,"key hotel statistics table, (6)% vs prior-year quarter"
+MGM,Las Vegas Strip Resorts room revenue,2025-Q3,660.488,S28,prior-year column
+MGM,Las Vegas Strip Resorts net revenue (nine months),2026-9M,6304.815,S28,segment table
+MGM,Las Vegas Strip Resorts net revenue (nine months),2025-9M,6275.449,S28,segment table
+MGM,Las Vegas Strip Resorts Segment Adjusted EBITDAR (nine months),2026-9M,2015.106,S28,segment table
+MGM,Las Vegas Strip Resorts Segment Adjusted EBITDAR (nine months),2025-9M,2122.525,S28,segment table
+MGM,Las Vegas Strip Resorts payroll related expense (nine months),2026-9M,2034.876,S29,10-Q segment expense table
+MGM,Las Vegas Strip Resorts payroll related expense (nine months),2025-9M,1967.561,S29,10-Q segment expense table
+MGM,Consolidated net revenues (nine months),2026-9M,13117.602,S28,
+MGM,Consolidated net revenues (nine months),2025-9M,12932.416,S28,
+MGM,MGM China net revenues (nine months),2026-9M,3361.083,S28,record quarterly revenue in Q3 2026
+MGM,MGM China net revenues (nine months),2025-9M,3225.293,S28,
+MGM,MGM Digital net revenues (nine months),2026-9M,562.715,S28,"mainly LeoVegas; excludes BetMGM"
+MGM,MGM Digital net revenues (nine months),2025-9M,465.946,S28,
+MGM,MGM share of BetMGM North America Venture operating income (nine months),2026-9M,57.200,"S9,S10,S28","Q1 7.360 + Q2 23.097 + Q3 26.743"
+MGM,MGM share of BetMGM North America Venture operating income (nine months),2025-9M,30.294,"S6,S7,S28","H1 6.569 + Q3 23.725"

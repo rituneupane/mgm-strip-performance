@@ -1,0 +1,10 @@
+metric,ytd_2026,yoy_change,change_unit,period,source_id,note
+Visitor volume,25789100,-0.001,share,Jan-Aug 2026,S22,LVCVA 2026 YTD column
+Convention attendance,4532000,0.105,share,Jan-Aug 2026,S22,
+Strip occupancy,0.835,-0.2,points,Jan-Aug 2026,S22,
+Weekend occupancy (all Las Vegas),0.888,0.2,points,Jan-Aug 2026,S22,
+Midweek occupancy (all Las Vegas),0.767,-0.4,points,Jan-Aug 2026,S22,
+Strip ADR (USD),196.11,0.02,share,Jan-Aug 2026,S22,
+Strip RevPAR (USD),163.75,0.018,share,Jan-Aug 2026,S22,
+Strip gaming win (USD),5936346000,0.029,share,Jan-Aug 2026,S22,LVCVA citing Nevada Gaming Control Board monthly data
+Airport passengers,34353312,-0.071,share,Jan-Aug 2026,S22,

@@ -1,0 +1,22 @@
+company,segment,year,cost_line,amount_musd,source_id
+MGM,Las Vegas Strip Resorts,2023,Payroll related,2517.233,S2
+MGM,Las Vegas Strip Resorts,2023,Cost of sales,551.877,S2
+MGM,Las Vegas Strip Resorts,2023,Gaming taxes,241.943,S2
+MGM,Las Vegas Strip Resorts,2023,Other segment items,2297.607,S2
+MGM,Las Vegas Strip Resorts,2024,Payroll related,2635.565,S2
+MGM,Las Vegas Strip Resorts,2024,Cost of sales,536.807,S2
+MGM,Las Vegas Strip Resorts,2024,Gaming taxes,232.841,S2
+MGM,Las Vegas Strip Resorts,2024,Other segment items,2304.357,S2
+MGM,Las Vegas Strip Resorts,2025,Payroll related,2623.256,S2
+MGM,Las Vegas Strip Resorts,2025,Cost of sales,515.998,S2
+MGM,Las Vegas Strip Resorts,2025,Gaming taxes,230.045,S2
+MGM,Las Vegas Strip Resorts,2025,Other segment items,2214.331,S2
+Caesars,Las Vegas,2023,Labor expense,1175,S4
+Caesars,Las Vegas,2023,Gaming taxes,139,S4
+Caesars,Las Vegas,2023,Other segment expenses,1140,S4
+Caesars,Las Vegas,2024,Labor expense,1177,S4
+Caesars,Las Vegas,2024,Gaming taxes,129,S4
+Caesars,Las Vegas,2024,Other segment expenses,1061,S4
+Caesars,Las Vegas,2025,Labor expense,1206,S4
+Caesars,Las Vegas,2025,Gaming taxes,122,S4
+Caesars,Las Vegas,2025,Other segment expenses,993,S4

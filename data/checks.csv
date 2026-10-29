@@ -1,0 +1,73 @@
+check,actual,expected,tolerance,result,source_ids
+MGM 2023: segment net revenues sum to consolidated,16164.249,16164.249,0.01,PASS,S2
+Caesars 2023: segment net revenues sum to consolidated,11528.0,11528.0,1.0,PASS,S4
+Caesars 2023: segment Adjusted EBITDA sums to consolidated,3938.0,3938.0,1.0,PASS,S4
+MGM 2023: Strip revenue mix sums to segment revenue,8799.146,8799.146,0.01,PASS,S2/S4
+Caesars 2023: Strip revenue mix sums to segment revenue,4470.0,4470.0,1.0,PASS,S2/S4
+MGM 2024: segment net revenues sum to consolidated,17240.545,17240.545,0.01,PASS,S2
+Caesars 2024: segment net revenues sum to consolidated,11245.0,11245.0,1.0,PASS,S4
+Caesars 2024: segment Adjusted EBITDA sums to consolidated,3739.0,3739.0,1.0,PASS,S4
+MGM 2024: Strip revenue mix sums to segment revenue,8816.113,8816.113,0.01,PASS,S2/S4
+Caesars 2024: Strip revenue mix sums to segment revenue,4274.0,4274.0,1.0,PASS,S2/S4
+MGM 2024: four quarters of Strip revenue sum to annual,8816.113,8816.113,0.01,PASS,"S1,S6-S8,S11-S14"
+MGM 2024: four quarters of Strip profit sum to annual,3106.543,3106.543,0.01,PASS,"S1,S6-S8,S11-S14"
+Caesars 2024: four quarters of Strip revenue sum to annual,4274.0,4274.0,0.5,PASS,"S1,S6-S8,S11-S14"
+Caesars 2024: four quarters of Strip profit sum to annual,1907.0,1907.0,0.5,PASS,"S1,S6-S8,S11-S14"
+MGM 2025: segment net revenues sum to consolidated,17537.683,17537.683,0.01,PASS,S2
+Caesars 2025: segment net revenues sum to consolidated,11486.0,11486.0,1.0,PASS,S4
+Caesars 2025: segment Adjusted EBITDA sums to consolidated,3624.0,3624.0,1.0,PASS,S4
+MGM 2025: Strip revenue mix sums to segment revenue,8441.503,8441.503,0.01,PASS,S2/S4
+Caesars 2025: Strip revenue mix sums to segment revenue,4049.0,4049.0,1.0,PASS,S2/S4
+MGM 2025: four quarters of Strip revenue sum to annual,8441.503,8441.503,0.01,PASS,"S1,S6-S8,S11-S14"
+MGM 2025: four quarters of Strip profit sum to annual,2857.873,2857.873,0.01,PASS,"S1,S6-S8,S11-S14"
+Caesars 2025: four quarters of Strip revenue sum to annual,4049.0,4049.0,0.5,PASS,"S1,S6-S8,S11-S14"
+Caesars 2025: four quarters of Strip profit sum to annual,1728.0,1728.0,0.5,PASS,"S1,S6-S8,S11-S14"
+MGM 2023: Strip revenue minus segment expenses = Segment Adj. EBITDAR,3190.486,3190.486,0.01,PASS,S2
+Caesars 2023: LV revenue minus segment expenses = Adj. EBITDA,2016.0,2016.0,1.0,PASS,S4
+MGM 2024: Strip revenue minus segment expenses = Segment Adj. EBITDAR,3106.543,3106.543,0.01,PASS,S2
+Caesars 2024: LV revenue minus segment expenses = Adj. EBITDA,1907.0,1907.0,1.0,PASS,S4
+MGM 2025: Strip revenue minus segment expenses = Segment Adj. EBITDAR,2857.873,2857.873,0.01,PASS,S2
+Caesars 2025: LV revenue minus segment expenses = Adj. EBITDA,1728.0,1728.0,1.0,PASS,S4
+MGM 2025: recomputed Strip margin matches reported 33.9%,33.855,33.9,0.05,PASS,S2/S4
+MGM 2024: recomputed Strip margin matches reported 35.2%,35.237,35.2,0.05,PASS,S2/S4
+Caesars 2025: recomputed Strip margin matches reported 42.7%,42.677,42.7,0.05,PASS,S2/S4
+Caesars 2024: recomputed Strip margin matches reported 44.6%,44.619,44.6,0.05,PASS,S2/S4
+MGM 2023: occupancy x ADR ~= RevPAR,238.08,237.0,3.0,PASS,S2
+MGM 2024: occupancy x ADR ~= RevPAR,244.4,245.0,3.0,PASS,S2
+MGM 2025: occupancy x ADR ~= RevPAR,229.08,229.0,3.0,PASS,S2
+MGM 2024-Q1: occupancy x ADR ~= RevPAR,257.61,258.0,3.0,PASS,S6
+MGM 2024-Q2: occupancy x ADR ~= RevPAR,240.56,240.0,3.0,PASS,S7
+MGM 2024-Q3: occupancy x ADR ~= RevPAR,228.42,229.0,3.0,PASS,S8
+MGM 2024-Q4: occupancy x ADR ~= RevPAR,254.74,254.0,3.0,PASS,S1
+MGM 2025-Q1: occupancy x ADR ~= RevPAR,241.58,242.0,3.0,PASS,S6
+MGM 2025-Q2: occupancy x ADR ~= RevPAR,234.36,235.0,3.0,PASS,S7
+MGM 2025-Q3: occupancy x ADR ~= RevPAR,210.04,210.0,3.0,PASS,S8
+MGM 2025-Q4: occupancy x ADR ~= RevPAR,228.41,228.0,3.0,PASS,S1
+MGM 2026-Q1: occupancy x ADR ~= RevPAR,236.44,238.0,3.0,PASS,S9
+MGM 2026-Q2: occupancy x ADR ~= RevPAR,225.06,224.0,3.0,PASS,S10
+MGM 2026-Q3: occupancy x ADR ~= RevPAR,194.02,193.0,3.0,PASS,S28
+LVCVA 2019: Strip occupancy x Strip ADR ~= Strip RevPAR,129.462,129.46,1.0,PASS,S21
+LVCVA 2022: Strip occupancy x Strip ADR ~= Strip RevPAR,148.602,148.6,1.0,PASS,S20
+LVCVA 2023: Strip occupancy x Strip ADR ~= Strip RevPAR,176.21,176.21,1.0,PASS,S19
+LVCVA 2024: Strip occupancy x Strip ADR ~= Strip RevPAR,178.088,178.09,1.0,PASS,S18
+LVCVA 2025: Strip occupancy x Strip ADR ~= Strip RevPAR,164.278,164.28,1.0,PASS,S17
+LVCVA 2026: Strip occupancy x Strip ADR ~= Strip RevPAR,163.752,163.75,1.0,PASS,S22
+LVCVA 2024: monthly visitor volume sums to annual,41676300.0,41676300.0,1000.0,PASS,S18
+LVCVA 2024: monthly convention attendance sums to annual,5994800.0,5994800.0,1000.0,PASS,S18
+LVCVA 2024: monthly Strip gaming win sums to annual ($M),8812.484,8812.484,1.0,PASS,S18
+LVCVA 2025: monthly visitor volume sums to annual,38545700.0,38545700.0,1000.0,PASS,S17
+LVCVA 2025: monthly convention attendance sums to annual,5988200.0,5988200.0,1000.0,PASS,S17
+LVCVA 2025: monthly Strip gaming win sums to annual ($M),8815.162,8815.162,1.0,PASS,S17
+2025 Strip gaming win: NGCB report vs LVCVA summary ($M),8815.212,8815.162,1.0,PASS,"S23,S17"
+"2025 Strip gaming win: table + slot = total (NGCB, $M)",8815.212,8815.212,0.01,PASS,S23
+MGM 2025: Q1 + Q2 Strip revenue = reported six months,4290.812,4290.812,0.01,PASS,"S6,S7,S9,S10"
+MGM 2025: Q1 + Q2 Strip EBITDAR = reported six months,1521.656,1521.656,0.01,PASS,"S6,S7,S9,S10"
+MGM 2026: Q1 + Q2 Strip revenue = reported six months,4350.475,4350.475,0.01,PASS,"S6,S7,S9,S10"
+MGM 2026: Q1 + Q2 Strip EBITDAR = reported six months,1484.325,1484.325,0.01,PASS,"S6,S7,S9,S10"
+LVCVA 2026 Jan-Aug: monthly visitors sum to YTD,25789100.0,25789100.0,1000.0,PASS,S22
+LVCVA 2026 Jan-Aug: monthly Strip gaming win sums to YTD ($M),5936.346,5936.346,1.0,PASS,S22
+"MGM Strip rooms: property rooms sum to 10-K subtotal (37,000)",37000.0,37000.0,0.0,PASS,S2
+MGM 2025: Q1 + Q2 + Q3 Strip revenue = reported nine months,6275.449,6275.449,0.01,PASS,"S6-S10,S28"
+MGM 2025: Q1 + Q2 + Q3 Strip EBITDAR = reported nine months,2122.525,2122.525,0.01,PASS,"S6-S10,S28"
+MGM 2026: Q1 + Q2 + Q3 Strip revenue = reported nine months,6304.815,6304.815,0.01,PASS,"S6-S10,S28"
+MGM 2026: Q1 + Q2 + Q3 Strip EBITDAR = reported nine months,2015.106,2015.106,0.01,PASS,"S6-S10,S28"

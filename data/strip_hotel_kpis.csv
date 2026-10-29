@@ -1,0 +1,18 @@
+company,period_type,period,occupancy,adr_usd,revpar_usd,source_id,note
+MGM,Annual,2023,0.93,256,237,S2,
+MGM,Annual,2024,0.94,260,245,S2,
+MGM,Annual,2025,0.92,249,229,S2,
+MGM,Quarter,2024-Q1,0.93,277,258,S6,prior-year column of Q1 2025 release
+MGM,Quarter,2024-Q2,0.97,248,240,S7,prior-year column of Q2 2025 release
+MGM,Quarter,2024-Q3,0.94,243,229,S8,prior-year column of Q3 2025 release
+MGM,Quarter,2024-Q4,0.94,271,254,S1,prior-year column of Q4 2025 release
+MGM,Quarter,2025-Q1,0.94,257,242,S6,
+MGM,Quarter,2025-Q2,0.93,252,235,S7,
+MGM,Quarter,2025-Q3,0.89,236,210,S8,
+MGM,Quarter,2025-Q4,0.91,251,228,S1,
+MGM,Quarter,2026-Q1,0.92,257,238,S9,
+MGM,Quarter,2026-Q2,0.93,242,224,S10,
+MGM,Quarter,2026-Q3,0.89,218,193,S28,
+Caesars,Annual,2023,0.968,,,S4,Caesars reports Las Vegas hotel occupancy only; ADR/RevPAR not disclosed
+Caesars,Annual,2024,0.975,,,S4,Caesars reports Las Vegas hotel occupancy only; ADR/RevPAR not disclosed
+Caesars,Annual,2025,0.941,,,S4,Caesars reports Las Vegas hotel occupancy only; ADR/RevPAR not disclosed

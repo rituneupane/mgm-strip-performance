@@ -1,0 +1,25 @@
+company,segment,year,category,net_revenue_musd,source_id
+MGM,Las Vegas Strip Resorts,2023,Casino,2127.612,S2
+MGM,Las Vegas Strip Resorts,2023,Rooms,3027.668,S2
+MGM,Las Vegas Strip Resorts,2023,Food & beverage,2289.812,S2
+MGM,Las Vegas Strip Resorts,2023,"Entertainment, retail & other",1354.054,S2
+MGM,Las Vegas Strip Resorts,2024,Casino,1960.146,S2
+MGM,Las Vegas Strip Resorts,2024,Rooms,3159.497,S2
+MGM,Las Vegas Strip Resorts,2024,Food & beverage,2356.718,S2
+MGM,Las Vegas Strip Resorts,2024,"Entertainment, retail & other",1339.752,S2
+MGM,Las Vegas Strip Resorts,2025,Casino,2013.701,S2
+MGM,Las Vegas Strip Resorts,2025,Rooms,2880.685,S2
+MGM,Las Vegas Strip Resorts,2025,Food & beverage,2260.651,S2
+MGM,Las Vegas Strip Resorts,2025,"Entertainment, retail & other",1286.466,S2
+Caesars,Las Vegas,2023,Casino,1212,S4
+Caesars,Las Vegas,2023,Rooms,1447,S4
+Caesars,Las Vegas,2023,Food & beverage,1152,S4
+Caesars,Las Vegas,2023,"Entertainment, retail & other",659,S4
+Caesars,Las Vegas,2024,Casino,1115,S4
+Caesars,Las Vegas,2024,Rooms,1417,S4
+Caesars,Las Vegas,2024,Food & beverage,1141,S4
+Caesars,Las Vegas,2024,"Entertainment, retail & other",601,S4
+Caesars,Las Vegas,2025,Casino,1072,S4
+Caesars,Las Vegas,2025,Rooms,1313,S4
+Caesars,Las Vegas,2025,Food & beverage,1099,S4
+Caesars,Las Vegas,2025,"Entertainment, retail & other",565,S4
